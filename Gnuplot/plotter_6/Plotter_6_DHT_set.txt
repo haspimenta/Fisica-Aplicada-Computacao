@@ -1,0 +1,11 @@
+set term wxt enhanced
+set xlabel "T(s)"
+set xrange [0:30]
+set ylabel "t(^{o}C)"
+set yrange [-100:100]
+plot "Plotter_6_DHT.dat" us 1:1 t "T_{humi_med}" w l lc rgb "blue",\
+"Plotter_6_DHT.dat" us 1:2 t "T_{temp_med}" w l lc rgb "red", \
+"Plotter_6_DHT.dat" us 1:3 t "T_{humid}" w l lc rgb "gold", \
+"Plotter_6_DHT.dat" us 1:4 t "T_{temp}" w l lc rgb "black",\
+"Plotter_6_DHT.dat" us 1:6 t "T_{Suav_temp}" w l lc rgb "purple",\
+"Plotter_6_DHT.dat" us 1:5 t "T_{Suav_humid}" w l lc rgb "green"

@@ -1,0 +1,13 @@
+set term wxt enhanced
+set xlabel "T(s)"
+set xrange [0:30]
+set ylabel "t(^{o}C)"
+set yrange [-40:120]
+plot "plotter_3.dat" us 1:4 t "T_{Tmin}" w l lc rgb "blue",\
+"plotter_3.dat" us 1:7 t "T_{Tmax}" w l lc rgb "red", \
+"plotter_3.dat" us 1:8 t "T" w l lc rgb "orange",\
+"plotter_3.dat" us 1:5 t "T_{T0}" w l lc rgb "gold", \
+"plotter_3.dat" us 1:6 t "T_{T1}" w l lc rgb "black",\
+"plotter_3.dat" us 1:2 t "T_{Media}" w l lc rgb "green"
+
+

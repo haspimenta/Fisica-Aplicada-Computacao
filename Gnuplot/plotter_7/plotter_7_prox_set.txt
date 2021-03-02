@@ -1,0 +1,7 @@
+set term wxt enhanced
+set xlabel "T(s)"
+set xrange [0:30]
+set ylabel "t(^{o}C)"
+set yrange [-100:100]
+plot "plotter_7_prox.dat" us 1:6 t "T_{Distancia(cm)}" w l lc rgb "purple",\
+"plotter_7_prox.dat" us 1:5 t "T_{Duração(us)}" w l lc rgb "green"
